@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="container">
+        <header class="my-header">
+            <div class="sm-header">
+                
+                <div class="erebtn">
+                    <div class="btn-container" [ngClass]="{'change': toggle}" (click)="toggleMenu()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+
+                <h2>Techshop</h2>
+
+                <div class="nav-icons">
+                    <span class="icons"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <span class="icons"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">SavedItems</a></li>
+                    <li><a href="#">Our Categories</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <div class="main-body">
+            <div class="card-box">
+                <!-- grid card -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="images/covers/crazy.jpg" alt="crazy-rich-asians">
+                    </div>
+                    <div class="card-details">
+                       <p>Crazy Rich Asians</p>
+                       <div class="card-stars-review">
+                            <span class="stars">
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="no-star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                            </span>
+                            <span class="review">252 reviews</span>
+                       </div> 
+                       <div class="card-cash">
+                           <span>$4.99</span><span><del>$24.12</del></span>
+                       </div>
+                       <!-- <button class="btn">Buy Now</button> -->
+                    </div>
+                </div>
+                <!-- end of grid card -->
+                <!-- grid card -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="images/covers/handmaid.jpg" alt="crazy-rich-asians">
+                    </div>
+                    <div class="card-details">
+                        <p>The handmaid's tale</p>
+                        <div class="card-stars-review">
+                            <span class="stars">
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="no-star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                            </span>
+                            <span class="review">1.1M reviews</span>
+                        </div>
+                        <p>
+                        <div class="card-cash">
+                            <span>$6.99</span><span><del>$18.12</del></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- end of grid card -->
+                <!-- grid card -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="images/covers/brave-world.jpg" alt="crazy-rich-asians">
+                    </div>
+                    <div class="card-details">
+                        <p>Brave new world</p>
+                        <div class="card-stars-review">
+                            <span class="stars">
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="no-star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                            </span>
+                            <span class="review">1.3M review</span>
+                        </div>
+                        <div class="card-cash">
+                            <span>$12.43</span><span><del>$42.50</del></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- end of grid card -->
+                <!-- grid card -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="images/covers/educated.jpg" alt="crazy-rich-asians">
+                    </div>
+                    <div class="card-details">
+                        <p>Educated</p>
+                        <div class="card-stars-review">
+                            <span class="stars">
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star-half" aria-hidden="true"></i></span>
+                            </span>
+                            <span class="review">364 review</span>
+                        </div>
+                        <div class="card-cash">
+                            <span>$12.68</span><span><del>$34.20</del></span>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- end of grid card -->
+                <!-- grid card -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="images/covers/weight.jpg" alt="crazy-rich-asians">
+                    </div>
+                    <div class="card-details">
+                        <p>The weight of things</p>
+                        <div class="card-stars-review">
+                            <span class="stars">
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="no-star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                            </span>
+                            <span class="review">353 review</span>
+                        </div>
+                        <div class="card-cash">
+                            <span>$18.23</span><span><del>$34.20</del></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- end of grid card -->
+                <!-- grid card -->
+                <div class="card">
+                    <div class="card-cover">
+                        <img src="images/covers/mothers.jpg" alt="crazy-rich-asians">
+                    </div>
+                    <div class="card-details">
+                        <p>Mothers stories</p>
+                        <div class="card-stars-review">
+                            <span class="stars">
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                                <span class="star"><i class="fas fa-star-half" aria-hidden="true"></i></span>
+                                <span class="no-star"><i class="fas fa-star" aria-hidden="true"></i></span>
+                            </span>
+                            <span class="review">454 review</span>
+                        </div>
+                        <div class="card-cash">
+                            <span>$12.35</span><span><del>$20.76</del></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- end of grid card -->
+            </div>
+        </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* card */
+.card-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+.card {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px; 
+    padding: 10px 0px;
+    height: 300px;
+}    
+.card-cover,
+.card-cover img {
+    width: 100%;
+    height: 200px;
+}
+.card-cover {
+    transition: all 0.5s;
+}
+.card-cover img {
+    object-fit: cover;
+    object-position: center;
+}
+/* .card-cover:hover{
+    transform: scale(0.8);
+    background-color: white;
+} */
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+    overflow: hidden;
+}
+.card-details p:first-of-type{
+    font-family: fontA;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 30px;
+    color: #1C2A39;
+    font-size: 0.6rem;
+
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* .card-details p:nth-of-type(2) {} */
+.card-stars-review {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.stars {
+    margin-right: 8px;
+    font-size: 0.8rem;
+}
+.star{
+    color: #F2C94C;
+}
+.no-star {
+   color: #EEEDF5;
+}
+.review {
+    font-family: fontA;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.6rem;  
+    color: #5C6A79;
+    
+}
+.card-cash span:first-child,
+.card-cash span:last-child {
+    font-family: fontA;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.card-cash span:first-child {
+    color: #1C2A39;
+}
+.card-cash span:last-child {
+    margin-left: 10px;
+    color: #5C6A79;
+}
+.card button {
+    display: block;
+    width: 100%;
+    background: none;
+    color: #4C3DB2;
+    border: 1px solid #4C3DB2;
+    padding: 20px;
+    margin: 10px 0px;
+    cursor: pointer;
+    outline: none;
+}
+.card button:hover {
+    background: #4C3DB2;
+    color: white;
+}
+
+
+@media (min-width: 576px) {
+  
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card-box {
+        grid-template-columns: 30% 30%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
+
